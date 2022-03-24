@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 void main()
@@ -12,7 +12,7 @@ void main()
 	}
 	cout << endl;
 	int namber_of_shifts;
-	cout << "Ââåäèòå êîëè÷åñòâî ñäâèãîâ:"; cin >> namber_of_shifts;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ´Ð²Ð¸Ð³Ð¾Ð²:"; cin >> namber_of_shifts;
 	for (int i = 0; i < namber_of_shifts; i++)
 	{
 		int buffer = arr[0];
