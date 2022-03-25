@@ -8,13 +8,19 @@ void main()
 	int arr[n] = {};
 	int sum = 0;
 	int min, max;
-	min = max = arr[0];
 	double sr;
 	//arr[2] = 123;
-	cout << "¬ведите элементы массива (" << n << " шт):";
-	for (int i = 0; i < n; i++)
+	int minRand;
+	int maxRand;
+	cout << "¬ведите минимальное возможное случаное число:"; cin >> minRand;
+	cout << "¬ведите максимальное возможное случайное число:"; cin >> maxRand;
+
+	//cout << "¬ведите элементы массива (" << n << " шт):";
+	for (int i = 0; i <= n; i++)
 	{
-		cin >> arr[i];
+		//cin >> arr[i];
+		arr[i] = rand() % (maxRand - minRand) + minRand;
+		
 	}
 	//вывод масива на экран
 	for (int i = 0; i < n; i++)
@@ -38,6 +44,7 @@ void main()
 	cout << ("sum=%d\n", sum); cout << endl;
 	cout << "—реднеее:" << (double)sum / n;
 	cout << endl;
+	min = max = arr[0];
 	for (int i = 0; i < n; i++)
 	{
 		if (arr[i] < min)min = arr[i];
