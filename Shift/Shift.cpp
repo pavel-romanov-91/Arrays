@@ -11,7 +11,7 @@ void main()
 		cout << arr[i] << "\t";
 	}
 	cout << endl;
-	int namber_of_shifts;
+	int namber_of_shifts, minus_namber;
 	cout << "Введите количество сдвигов:"; cin >> namber_of_shifts;
 	for (int i = 0; i < namber_of_shifts; i++)
 	{
@@ -27,6 +27,9 @@ void main()
 		cout << arr[i] << "\t";
 	}
 	cout << endl;
-	
-
+	for (int i = n - 1; i >= 0; i--)
+	{
+		cout << arr[i] << "\t";
+	}
+	cout << endl;
 }
