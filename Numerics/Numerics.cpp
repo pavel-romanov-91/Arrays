@@ -55,13 +55,13 @@ void main()
 	cout << endl;
 #endif // OCTAL
 #ifdef HEXADECIMAL
-	string digits[16] = { "0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F" };
+	char digits[16] = { '0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F' };
 	int decimal;
 	cout << "Введите десятичное число:"; cin >> decimal;
 	string hexadecimal;
 	do
 	{
-		hexadecimal.insert(0, digits[decimal % 16]);
+		hexadecimal.(0, digits[decimal % 16]);
 		decimal /= 16;
 	} 
 	while (decimal != 0);
