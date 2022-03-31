@@ -1,4 +1,4 @@
-//Dublicates
+ï»¿//Dublicates
 #include<iostream>
 using namespace std;
 
@@ -24,7 +24,7 @@ void main()
 
 	for (int i = 0; i < n; i++)
 	{
-		bool already_there = false;// ïðåäëîãàåì ÷òî ýëåìåíò áûë âûáðàí
+		bool already_there = false;// Ð¿Ñ€ÐµÐ´Ð»Ð¾Ð³Ð°ÐµÐ¼ Ñ‡Ñ‚Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð±Ñ‹Ð» Ð²Ñ‹Ð±Ñ€Ð°Ð½
 		for (int j = 0; j < i; j++)
 		{
 			if (arr[i] == arr[j])
@@ -35,7 +35,7 @@ void main()
 		}
 #ifdef SEARCH
 		if (already_there)continue;
-		int count = 1; //ñ÷åò÷èê âõîæäåíèé
+		int count = 1; //ÑÑ‡ÐµÑ‚Ñ‡Ð¸Ðº Ð²Ñ…Ð¾Ð¶Ð´ÐµÐ½Ð¸Ð¹
 		for (int j = i + 1; j < n; j++)
 		{
 			if (arr[i] == arr[j])
@@ -43,15 +43,15 @@ void main()
 				count++;
 			}
 		}
-		if (count > 1)printf("Çíà÷åíèå %d âñòðå÷àåòñÿ %d ðàç\n", arr[i], count);
-		//if (count > 1)cout << arr[i] << " âñòðå÷àåòñÿ " << count << " ðàç" << endl;
-		//if (count > 0)cout << arr[i] << " ïîâòîðÿåòñÿ " << count << " ðàç" << endl;  
+		if (count > 1)printf("Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ %d Ð²ÑÑ‚Ñ€ÐµÑ‡Ð°ÐµÑ‚ÑÑ %d Ñ€Ð°Ð·\n", arr[i], count);
+		//if (count > 1)cout << arr[i] << " Ð²ÑÑ‚Ñ€ÐµÑ‡Ð°ÐµÑ‚ÑÑ " << count << " Ñ€Ð°Ð·" << endl;
+		//if (count > 0)cout << arr[i] << " Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€ÑÐµÑ‚ÑÑ " << count << " Ñ€Ð°Ð·" << endl;  
 #endif // SEARCH
 
 #ifdef SEARCH_1
 		if (!already_there)
 		{
-			int count = 1; //ñ÷åò÷èê âõîæäåíèé
+			int count = 1; //ÑÑ‡ÐµÑ‚Ñ‡Ð¸Ðº Ð²Ñ…Ð¾Ð¶Ð´ÐµÐ½Ð¸Ð¹
 			for (int j = i + 1; j < n; j++)
 			{
 				if (arr[i] == arr[j])
@@ -59,8 +59,8 @@ void main()
 					count++;
 				}
 			}
-			if (count > 1)cout << arr[i] << " âñòðå÷àåòñÿ " << count << " ðàç" << endl;
-			//if (count > 0)cout << arr[i] << " ïîâòîðÿåòñÿ " << count << " ðàç" << endl;
+			if (count > 1)cout << arr[i] << " Ð²ÑÑ‚Ñ€ÐµÑ‡Ð°ÐµÑ‚ÑÑ " << count << " Ñ€Ð°Ð·" << endl;
+			//if (count > 0)cout << arr[i] << " Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€ÑÐµÑ‚ÑÑ " << count << " Ñ€Ð°Ð·" << endl;
 		}
 #endif // SEARCH_1
 
